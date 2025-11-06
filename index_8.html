@@ -1,0 +1,364 @@
+404
+There isn't a GitHub Pages site here.
+
+If you're trying to publish one, read the full documentation to learn how to set up GitHub Pages for your repository, organization, or user account.
+
+GitHub Status — @githubstatus<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marwadi University - Rajkot</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Define Color Palette and Base Styles */
+        :root {
+            --primary-color: #D32F2F; /* Marwadi Red */
+            --secondary-color: #333333; /* Dark Gray */
+            --light-gray: #f8f9fa;
+            --white-color: #ffffff;
+            --text-color: #555;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--text-color);
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Section Styling */
+        .section-padding {
+            padding: 100px 0;
+        }
+        .section-title {
+            margin-bottom: 60px;
+            font-weight: 700;
+            color: var(--secondary-color);
+            position: relative;
+            padding-bottom: 15px;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: var(--primary-color);
+        }
+
+        /* Navbar */
+        .navbar {
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        }
+        .navbar-brand img {
+            height: 56px; /* Prominent logo size */
+            width: auto;
+        }
+
+        @media (max-width: 576px) {
+            .navbar-brand img {
+                height: 40px; /* Smaller on mobile */
+            }
+        }
+        .navbar-nav .nav-link {
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        .navbar-nav .nav-link:hover, .navbar-nav .nav-link.active {
+            color: var(--primary-color);
+        }
+
+        /* Hero Section */
+        #hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('main.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: var(--white-color);
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+        }
+        #hero h1 {
+            font-weight: 700;
+            font-size: 3.5rem;
+        }
+        #hero p {
+            font-size: 1.2rem;
+        }
+        .btn-brand {
+            background-color: var(--primary-color);
+            color: var(--white-color);
+            font-weight: 500;
+            padding: 12px 30px;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
+        .btn-brand:hover {
+            background-color: #a72626;
+            transform: translateY(-3px);
+        }
+
+        /* Generic Card for Vision/Mission/PSO */
+        .info-card {
+            background-color: var(--white-color);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            height: 100%;
+        }
+        .info-card ul {
+            padding-left: 20px;
+        }
+        .info-card li {
+            margin-bottom: 10px;
+        }
+
+        /* Courses Section */
+        .course-btn {
+            margin: 8px;
+            font-weight: 500;
+            border-radius: 50px;
+            padding: 10px 25px;
+            transition: all 0.3s ease;
+        }
+
+        /* Image Gallery */
+        .gallery-card {
+            border: none;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+        .gallery-card:hover {
+            transform: translateY(-10px);
+        }
+        .gallery-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        .gallery-card .card-body {
+            background-color: var(--white-color);
+        }
+
+        /* Top Recruiters */
+        .recruiter-logo {
+            background-color: var(--white-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 120px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            filter: grayscale(100%);
+        }
+        .recruiter-logo:hover {
+            filter: grayscale(0%);
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+        .recruiter-logo img {
+            max-height: 60px;
+            max-width: 80%;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: var(--secondary-color);
+            color: var(--white-color);
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="logo.jpg" alt="Marwadi University Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"> <a class="nav-link" href="#hero">Home</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#vision-mission">Vision & Mission</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#psos">PSOs</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#courses">Courses</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#gallery">Gallery</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#recruiters">Recruiters</a> </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <h1 class="display-4">Discover. Learn. Succeed.</h1>
+                    <p class="my-4">Welcome to Marwadi University, a hub of innovation, research, and holistic education in the heart of Gujarat.</p>
+                    <a href="#" class="btn btn-brand">Admissions Open</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <section id="vision-mission" class="section-padding">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <div class="info-card">
+                            <h3 class="mb-4"><i class="bi bi-eye-fill text-danger"></i> Our Vision</h3>
+                            <p>To impart quality technical education through research, innovation and teamwork to create professionally capable and ethically strong individuals.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="info-card">
+                            <h3 class="mb-4"><i class="bi bi-bullseye text-danger"></i> Our Mission</h3>
+                            <ul>
+                                <li>Provide IT-enabled education and learning environment.</li>
+                                <li>Enable students to become digital age-literates and professionals.</li>
+                                <li>Foster innovation, leadership and entrepreneurial spirit.</li>
+                                <li>Prepare graduates for life-long learning and ethical challenges.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="psos" class="section-padding bg-light">
+            <div class="container">
+                <h2 class="text-center section-title">Program Specific Outcomes (PSOs)</h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="info-card text-center">
+                            <p class="lead">Our curriculum is designed to achieve specific, measurable outcomes that prepare students for the professional world.</p>
+                            <div class="row mt-4 text-start">
+                                <div class="col-md-6">
+                                    <h5 class="text-danger">PSO 1: System Development</h5>
+                                    <p>Demonstrate skills and competency in the analysis, design, and development of computer-based systems addressing industrial and social issues.</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5 class="text-danger">PSO 2: Modern Technology</h5>
+                                    <p>Apply the latest technological advancements in the fields of Artificial Intelligence, Machine Learning, and the Internet of Things.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="courses" class="section-padding">
+            <div class="container text-center">
+                <h2 class="section-title">Courses Offered</h2>
+                <p class="lead mb-5">Explore a wide range of programs designed to shape the leaders of tomorrow.</p>
+                <a href="#" class="btn btn-outline-danger course-btn">B.Tech - CSE</a>
+                <a href="#" class="btn btn-outline-danger course-btn">M.Tech - AI/ML</a>
+                <a href="#" class="btn btn-outline-danger course-btn">M.Tech - Cyber Security</a>
+                <a href="#" class="btn btn-outline-danger course-btn">PhD - Computer Engineering</a>
+                <a href="#" class="btn btn-outline-danger course-btn">MBA</a>
+                <a href="#" class="btn btn-outline-danger course-btn">B.Sc - IT</a>
+            </div>
+        </section>
+
+        <section id="gallery" class="section-padding bg-light">
+            <div class="container">
+                <h2 class="text-center section-title">Events</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card gallery-card">
+                            <img src="1.jpg" alt="Event 1">
+                            <div class="card-body">
+                                <h5 class="card-title text-center fw-bold">Event 1</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card gallery-card">
+                            <img src="2.jpg" alt="Event 2">
+                            <div class="card-body">
+                                <h5 class="card-title text-center fw-bold">Event 2</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card gallery-card">
+                            <img src="3.jpg" alt="Event 3">
+                            <div class="card-body">
+                                <h5 class="card-title text-center fw-bold">Event 3</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="recruiters" class="section-padding">
+            <div class="container">
+                <h2 class="text-center section-title">Our Top Recruiters</h2>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-6 col-md-3 col-lg-2">
+                        <div class="recruiter-logo">
+                           <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-2">
+                        <div class="recruiter-logo">
+                           <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon">
+                        </div>
+                    </div>
+                     <div class="col-6 col-md-3 col-lg-2">
+                        <div class="recruiter-logo">
+                           <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Microsoft_logo_%282012%29.svg" alt="Microsoft">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-2">
+                        <div class="recruiter-logo">
+                           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Infosys_logo.svg/800px-Infosys_logo.svg.png" alt="Infosys">
+                        </div>
+                    </div>
+                     <div class="col-6 col-md-3 col-lg-2">
+                        <div class="recruiter-logo">
+                           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Tata_Consultancy_Services_Logo.svg/800px-Tata_Consultancy_Services_Logo.svg.png" alt="TCS">
+                        </div>
+                    </div>
+                     <div class="col-6 col-md-3 col-lg-2">
+                        <div class="recruiter-logo">
+                           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Wipro_Primary_Logo_Color_RGB.svg/1200px-Wipro_Primary_Logo_Color_RGB.svg.png" alt="Wipro">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer text-center section-padding pb-4 pt-5">
+        <div class="container">
+            <p>&copy; 2025 Marwadi University, Rajkot. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
